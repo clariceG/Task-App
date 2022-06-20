@@ -61,3 +61,10 @@ window.addEventListener('load', ()=> {
 
     });
 });
+function checkforblank(){
+    if (document.getElementById('new-task-input').value =="") {
+        alert ('Please Insert a Task');
+        return false;
+        
+    }
+}
