@@ -2,9 +2,16 @@ window.addEventListener('load', ()=> {
     const form = document.querySelector("#new-task-form");
     const input = document.querySelector('#new-task-input');
     const list_el = document.querySelector('#tasks');
+    count = 0;
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+
+        if (document.getElementById('new-task-input').value =="") {
+            alert ('Please Insert a Task');
+            return false;
+             } 
+             count ++;
 
         const task = input.value;
         const task_el = document.createElement('div');
@@ -18,7 +25,7 @@ window.addEventListener('load', ()=> {
         const task_input_el = document.createElement('input');
         task_input_el.classList.add('text');
         task_input_el.type='text';
-        task_input_el.value=task;
+        task_input_el.value= count +'. '+task;
         
         task_input_el.setAttribute("readonly", "readonly");
 
@@ -61,10 +68,5 @@ window.addEventListener('load', ()=> {
 
     });
 });
-function checkforblank(){
-    if (document.getElementById('new-task-input').value =="") {
-        alert ('Please Insert a Task');
-        return false;
-        
-    }
-}
+
+    
