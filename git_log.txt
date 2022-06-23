@@ -1,0 +1,44 @@
+clari@DESKTOP-2N2PP0F MINGW64 ~/Desktop/Task App (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/clari/Desktop/Task App/.git/
+
+clari@DESKTOP-2N2PP0F MINGW64 ~/Desktop/Task App (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+clari@DESKTOP-2N2PP0F MINGW64 ~/Desktop/Task App (master)
+$ touch git_log.txt
+
+clari@DESKTOP-2N2PP0F MINGW64 ~/Desktop/Task App (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+clari@DESKTOP-2N2PP0F MINGW64 ~/Desktop/Task App (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+clari@DESKTOP-2N2PP0F MINGW64 ~/Desktop/Task App (master)
+$ git add .
+
+clari@DESKTOP-2N2PP0F MINGW64 ~/Desktop/Task App (master)
+$ git commit -m "updated git_log.txt"
+[master b3d9157] updated git_log.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git_log.txt
+
+clari@DESKTOP-2N2PP0F MINGW64 ~/Desktop/Task App (master)
+$
+
