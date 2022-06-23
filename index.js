@@ -8,7 +8,7 @@ window.addEventListener('load', ()=> {
         e.preventDefault();
 
         if (document.getElementById('new-task-input').value =="") {
-            alert ('Please Insert a Task');
+            alert ('Please Insert a valid Task');
             return false;
              } 
              count ++;
